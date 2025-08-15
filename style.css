@@ -44,7 +44,6 @@ ul {
     padding-left: 20px;
 }
 
-/* Seção de Projetos */
 .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -56,7 +55,7 @@ ul {
     background-color: #fafafa;
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    overflow: hidden; /* Garante que a imagem se ajuste às bordas arredondadas */
+    overflow: hidden;
     display: flex;
     flex-direction: column;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -71,7 +70,7 @@ ul {
 .project-card img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* Garante que a imagem cubra o espaço sem distorcer */
+    object-fit: cover;
 }
 
 .project-card h4 {
@@ -82,7 +81,7 @@ ul {
 
 .project-card p {
     margin: 0 15px 15px;
-    flex-grow: 1; /* Faz a descrição ocupar o espaço disponível */
+    flex-grow: 1;
     font-size: 0.9rem;
 }
 
@@ -118,48 +117,47 @@ ul {
 }
 
 .project-links a:hover {
-    color: #007bff; /* Azul para destacar no hover */
+    color: #007bff;
 }
 
 .project-links a i {
-    margin-right: 5px; /* Espaço entre o ícone e o texto */
+    margin-right: 5px;
 }
 
 .project-card.fit-contain img {
-    object-fit: contain; /* Mostra a imagem inteira */
-    background-color: #2c3e50; /* Um fundo escuro para preencher o espaço vazio */
+    object-fit: contain;
+    background-color: #2c3e50;
 }
 
 .contact-links {
-    display: flex; /* Alinha os links horizontalmente */
-    justify-content: center; /* Centraliza os links no container */
-    flex-wrap: wrap; /* Permite que os links quebrem a linha em telas menores */
-    gap: 15px; /* Espaço entre cada link */
-    margin-top: 20px; /* Espaço acima da seção de contatos */
-    margin-bottom: 40px; /* Espaço abaixo, antes do "Sobre mim" */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+    margin-bottom: 40px;
 }
 
 .contact-links a {
-    display: inline-flex; /* Alinha o ícone e o texto dentro do link */
-    align-items: center; /* Centraliza verticalmente o ícone e o texto */
-    gap: 8px; /* Espaço entre o ícone e o texto */
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
     
-    padding: 10px 20px; /* Preenchimento interno para criar o formato de "pílula" */
-    border-radius: 50px; /* Deixa as bordas completamente arredondadas */
-    border: 1px solid #ddd; /* Borda sutil */
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid #ddd;
     
-    color: #333; /* Cor do texto e do ícone */
-    text-decoration: none; /* Remove o sublinhado padrão do link */
-    font-weight: 400; /* Peso da fonte */
+    color: #333;
+    text-decoration: none;
+    font-weight: 400;
     
-    transition: all 0.3s ease-in-out; /* Animação suave para o hover */
+    transition: all 0.3s ease-in-out;
 }
 
-/* Efeito ao passar o mouse */
 .contact-links a:hover {
-    background-color: #333; /* Cor de fundo escura */
-    color: #fff; /* Cor do texto e do ícone branca */
-    border-color: #333; /* Cor da borda escura */
-    transform: translateY(-3px); /* Leve elevação para dar feedback */
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Sombra sutil */
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
