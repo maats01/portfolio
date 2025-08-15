@@ -14,124 +14,138 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="script.js"></script>
 </head>
 
 <body>
 
     <main class="container">
-        <h1>Matheus Sampaio</h1>
-        <h2>Desenvolvedor Backend</h2>
 
-        <div class="contact-links">
-            <a href="mailto:matheusp.sampaio@gmail.com" title="Enviar um e-mail">
-                <i class="fas fa-envelope"></i>
-                <span>Email</span>
-            </a>
-            <a href="https://www.linkedin.com/in/matheuspsampaio" target="_blank" rel="noopener noreferrer"
-                title="Ver meu perfil no LinkedIn">
-                <i class="fab fa-linkedin"></i>
-                <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/maats01" target="_blank" rel="noopener noreferrer"
-                title="Ver meus projetos no GitHub">
-                <i class="fab fa-github"></i>
-                <span>GitHub</span>
-            </a>
+        <div class="theme-switcher">
+            <button id="theme-toggle-btn" title="Alternar para tema escuro">
+                <i class="fas fa-moon"></i>
+            </button>
         </div>
 
-        <h3>Sobre mim</h3>
-        <p>Olá, meu nome é Matheus, tenho 20 anos e atualmente estou cursando Ciência da Computação. Tenho
-            interesse nas áreas de desenvolvimento de software e ciência de dados.</p>
+        <header>
+            <h1>Matheus Sampaio</h1>
+            <h2>Desenvolvedor Backend</h2>
 
-        <h3>Habilidades</h3>
+            <div class="contact-links">
+                <a href="mailto:matheusp.sampaio@gmail.com" title="Enviar um e-mail">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/matheuspsampaio" target="_blank" rel="noopener noreferrer"
+                    title="Ver meu perfil no LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/maats01" target="_blank" rel="noopener noreferrer"
+                    title="Ver meus projetos no GitHub">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </header>
 
-        <h4>Linguagens</h4>
-        <ul>
-            <li>Python</li>
-            <li>C#</li>
-            <li>PHP</li>
-            <li>JavaScript</li>
-        </ul>
+        <section id="sobre">
+            <h3>Sobre mim</h3>
+            <p>Olá, meu nome é Matheus, tenho 20 anos e atualmente estou cursando Ciência da Computação. Tenho
+                interesse nas áreas de desenvolvimento de software e ciência de dados.</p>
+        </section>
 
-        <h4>Frameworks & Tecnologias Backend</h4>
-        <ul>
-            <li>ASP.NET Core</li>
-            <li>EntityFramework Core</li>
-            <li>CodeIgniter 4</li>
-            <li>API RESTful</li>
-            <li>Autenticação & Autorização (JWT, Shield)</li>
-            <li>Swagger / OpenAPI</li>
-        </ul>
+        <section id="habilidades">
+            <h3>Habilidades</h3>
 
-        <h4>Bancos de Dados</h4>
-        <ul>
-            <li>MySQL</li>
-            <li>Bancos de Dados Relacionais</li>
-        </ul>
+            <h4>Linguagens</h4>
+            <ul>
+                <li>Python</li>
+                <li>C#</li>
+                <li>PHP</li>
+                <li>JavaScript</li>
+            </ul>
 
-        <h4>Conceitos & Ferramentas</h4>
-        <ul>
-            <li>Programação Orientada a Objetos (OOP)</li>
-            <li>Testes Unitários</li>
-            <li>Git & GitHub</li>
-            <li>Trabalho em Equipe</li>
-            <li>Inglês Avançado</li>
-        </ul>
+            <h4>Frameworks & Tecnologias Backend</h4>
+            <ul>
+                <li>ASP.NET Core</li>
+                <li>EntityFramework Core</li>
+                <li>CodeIgniter 4</li>
+                <li>API RESTful</li>
+                <li>Autenticação & Autorização (JWT, Shield)</li>
+                <li>Swagger / OpenAPI</li>
+            </ul>
 
-        <h3>Projetos</h3>
-        <section class="projects-grid">
+            <h4>Bancos de Dados</h4>
+            <ul>
+                <li>MySQL</li>
+                <li>Bancos de Dados Relacionais</li>
+            </ul>
+
+            <h4>Conceitos & Ferramentas</h4>
+            <ul>
+                <li>Programação Orientada a Objetos (OOP)</li>
+                <li>Testes Unitários</li>
+                <li>Git & GitHub</li>
+                <li>Trabalho em Equipe</li>
+                <li>Inglês Avançado</li>
+            </ul>
+        </section>
+
+        <section id="projetos" class="projects-grid">
 
             <div class="project-card">
-                <img src="media/dashboard-controle-financeiro.png" alt="Imagem da interface do Swagger">
-                <h4>Sistema para Controle Financeiro</h4>
-                <p>Projeto desenvolvido em grupo para a disciplina de Programação III.
-                    <strong>Minha principal contribuição foi o desenvolvimento do backend</strong>,
-                    criando a API do Dashboard e os gráficos utilizando chart.js e endpoints com método GET no geral.
-                </p>
-                <div class="project-tech">
-                    <span>PHP</span>
-                    <span>CodeIgniter4</span>
-                    <span>Shield</span>
-                    <span>MySQL</span>
+                <img src="media/dashboard-controle-financeiro.png" alt="Dashboard do sistema de controle financeiro">
+                <div class="project-card-content">
+                    <h4>Sistema para Controle Financeiro</h4>
+                    <p>Projeto em grupo para a disciplina de Programação III.
+                        <strong>Minha principal contribuição foi o desenvolvimento do backend</strong>,
+                        criando a API do Dashboard e os gráficos utilizando chart.js e endpoints com método GET no geral.
+                    </p>
+                    <div class="project-tech">
+                        <span>PHP</span>
+                        <span>CodeIgniter4</span>
+                        <span>Shield</span>
+                        <span>MySQL</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/maats01/Controle-Financeiro" target="_blank"><i
+                                class="fab fa-github"></i> Repositório</a>
+                        <a href="https://docs.google.com/document/d/1_FwQcxJraCIYSczE2jc4TBDMXNpGbJRrpnHsh7XgOKU/edit?usp=sharing"
+                            target="_blank"><i class="fas fa-book-open"></i> Ler o Artigo</a>
+                    </div>
                 </div>
-                <div class="project-links">
-                    <a href="https://github.com/maats01/Controle-Financeiro" target="_blank"><i
-                            class="fab fa-github"></i>
-                        Repositório</a>
-                    <a href="https://docs.google.com/document/d/1_FwQcxJraCIYSczE2jc4TBDMXNpGbJRrpnHsh7XgOKU/edit?usp=sharing"
-                        target="_blank"><i class="fas fa-book-open"></i> Ler o Artigo</a>
-                </div>
-            </div>
             </div>
 
             <div class="project-card">
-                <img src="media/book-catalog-api.png" alt="Imagem da interface do Swagger">
-                <h4>Book Catalog API</h4>
-                <p>BookCatalog é uma API REST simples feita para gerenciamento de um catálogo de livros.</p>
-                <div class="project-tech">
-                    <span>C#</span>
-                    <span>ASP.NET Core 9</span>
-                    <span>Swagger</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/maats01/BookCatalogAPI" target="_blank"><i class="fab fa-github"></i>
-                        Repositório</a>
+                <img src="media/book-catalog-api.png" alt="Interface da documentação da API no Swagger">
+                <div class="project-card-content">
+                    <h4>Book Catalog API</h4>
+                    <p>BookCatalog é uma API REST simples feita para gerenciamento de um catálogo de livros.</p>
+                    <div class="project-tech">
+                        <span>C#</span>
+                        <span>ASP.NET Core</span>
+                        <span>Swagger</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/maats01/BookCatalogAPI" target="_blank"><i
+                                class="fab fa-github"></i> Repositório</a>
+                    </div>
                 </div>
             </div>
 
             <div class="project-card fit-contain">
-                <img src="media/mandalorian-game.png" alt="Imagem do mandalorian game">
-                <h4>Mandalorian Game</h4>
-                <p>Jogo 2D com o estilo dos jogos de espaçonave retro.</p>
-                <div class="project-tech">
-                    <span>Python</span>
-                    <span>Pygame</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/maats01/MandalorianGame" target="_blank"><i class="fab fa-github"></i>
-                        Repositório</a>
+                <img src="media/mandalorian-game.png" alt="Gameplay do Mandalorian Game, um jogo de espaçonave 2D">
+                <div class="project-card-content">
+                    <h4>Mandalorian Game</h4>
+                    <p>Jogo 2D com o estilo dos jogos de espaçonave retro, desenvolvido com a biblioteca Pygame.</p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Pygame</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/maats01/MandalorianGame" target="_blank"><i
+                                class="fab fa-github"></i> Repositório</a>
+                    </div>
                 </div>
             </div>
 
@@ -139,6 +153,12 @@
 
     </main>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+
 </body>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.js"></script>
 
 </html>
